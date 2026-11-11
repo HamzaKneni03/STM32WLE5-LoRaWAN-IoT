@@ -1,56 +1,59 @@
-Wio-E5 Development Kit
 
-1. Introduction
+# 2.4. Wio-E5 Development Kit Documentation
 
-The Wio-E5 Development Kit is a development board designed for LoRa and LoRaWAN applications.
+The LoRa-E5 Dev Board is a compact and cost-effective development platform designed for evaluating and prototyping applications based on the LoRa-E5 module, which integrates the STM32WLE5JC microcontroller and Sub-GHz radio transceiver. It is suitable for LoRaWAN, LoRa P2P, and other long-range, low-power IoT applications.
 
-It is based on the LoRa-E5 module, which integrates the STM32WLE5JC microcontroller and a Sub-GHz radio transceiver.
+**Figure 1: LoRa-E5 Development Board**
 
-During my internship at YUCCAINFO, this development board was used to explore LoRaWAN communication and experiment with AT commands.
+![LoRa-E5 Development Board](../../Images/Hardware/LoRa-E5_Development_Board.png)
 
-2. Board Overview
+## 2.4.1. Main Features
 
-The Wio-E5 Development Kit provides a hardware platform for testing and developing wireless IoT applications.
+The following table summarizes the main technical features of the development board.
 
-The board integrates the main elements required to communicate with a LoRaWAN network and to connect external peripherals.
+| Feature | Description |
+|---|---|
+| Main Module | LoRa-E5 STM32WLE5JC (integrated MCU and Sub-GHz radio) |
+| Microcontroller | Arm Cortex-M4, up to 48 MHz |
+| Flash Memory | 256 KB |
+| SRAM | 64 KB |
+| RF Frequency Band | 868 MHz / 915 MHz, depending on the board version |
+| Wireless Communication | LoRaWAN and LoRa P2P |
+| USB-C Interface | Power supply and serial communication |
+| Connectors | 2.54 mm headers, UART, I2C, SPI, ADC, and GPIO |
+| Power Supply | 5 V through USB-C or external supply, according to board specifications |
+| Operating Modes | AT commands and native STM32 programming |
+| Antenna Connector | SMA connector for an external Sub-GHz antenna |
 
-Board image:
+**Figure 2: Main Peripherals of the Development Board**
 
+![LoRa-E5 Board Peripherals](../../Images/Hardware/LoRa-E5_Peripherals.png)
 
+## 2.4.2. LoRa-E5 Dev Board Pinout
 
-3. Main Hardware Components
+The LoRa-E5 Dev Board integrates the LoRa-E5 STM32WLE5JC module, combining a 32-bit STM32 microcontroller with a Sub-GHz LoRa radio modem.
 
-The following elements are relevant to the board:
+The board provides several interfaces accessible through its side headers:
 
-LoRa-E5 wireless module.
+- **Digital and Analog GPIO:** Used to connect sensors and actuators.
+- **Communication Interfaces:** UART, LPUART, USART, I2C, and SPI.
+- **Debugging Interface:** SWD pads for STM32 programming and debugging.
+- **SMA Connector:** Used to connect an external LoRa antenna.
+- **USB-C Port:** Used for board power supply and serial communication.
+- **BOOT and RESET Controls:** Used to manage the startup process and enter bootloader mode.
 
-STM32WLE5JC microcontroller.
+The pinout diagram uses different colors to identify the functions of the available pins:
 
-USB Type-C interface.
+- **Power:** Power supply pins.
+- **GND:** Ground pins.
+- **ADC:** Analog input pins.
+- **UART / USART / I2C / SPI:** Communication interfaces.
+- **SWD:** Programming and debugging pins.
 
-Antenna connector.
+**Figure 3: LoRa-E5 Dev Board Pinout Diagram**
 
-User interface and indicator elements.
+![LoRa-E5 Dev Board Pinout](../../Images/Hardware/LoRa-E5_Pinout.png)
 
-External GPIO connections.
+---
 
-4. Microcontroller
-
-The board uses the STM32WLE5JC, based on an ARM Cortex-M4 core.
-
-Its integrated Sub-GHz radio makes it suitable for low-power wireless IoT applications.
-
-5. Communication Interfaces
-
-The development board provides access to interfaces used in embedded applications.
-
-These include:
-
-UART for serial communication.
-
-GPIO for digital input/output.
-
-Other peripheral interfaces exposed through the board connections.
-
-The exact pin assignments should be checked against the official board pinout.
-
+**Note:** This documentation describes the features and interfaces available on the development board. It does not imply that every interface was used or tested during the internship.
