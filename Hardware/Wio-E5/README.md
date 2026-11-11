@@ -1,5 +1,5 @@
 
-# 2.4. Wio-E5 Development Kit Documentation
+# Wio-E5 Development Kit Documentation
 
 The LoRa-E5 Dev Board is a compact and cost-effective development platform designed for evaluating and prototyping applications based on the LoRa-E5 module, which integrates the STM32WLE5JC microcontroller and Sub-GHz radio transceiver. It is suitable for LoRaWAN, LoRa P2P, and other long-range, low-power IoT applications.
 
@@ -7,7 +7,7 @@ The LoRa-E5 Dev Board is a compact and cost-effective development platform desig
 
 ![LoRa-E5 Development Board](../../Images/Hardware/LoRa-E5_Development_Board.png)
 
-## 2.4.1. Main Features
+## Main Features
 
 The following table summarizes the main technical features of the development board.
 
@@ -29,7 +29,7 @@ The following table summarizes the main technical features of the development bo
 
 ![LoRa-E5 Board Peripherals](../../Images/Hardware/LoRa-E5_Peripherals.png)
 
-## 2.4.2. LoRa-E5 Dev Board Pinout
+## LoRa-E5 Dev Board Pinout
 
 The LoRa-E5 Dev Board integrates the LoRa-E5 STM32WLE5JC module, combining a 32-bit STM32 microcontroller with a Sub-GHz LoRa radio modem.
 
