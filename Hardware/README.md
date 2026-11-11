@@ -10,7 +10,7 @@ This System-on-Chip (SoC) architecture makes it particularly suitable for long-r
 
 In this project, the STM32WLE5JC is integrated into the LoRa-E5 Development Board, which provides the interfaces required for prototyping and wireless communication experiments.
 
-![MCU STM32WLEJC-LoRa-E5](Images\MCU STM32WLEJC-LoRa-E5.jpg)
+![MCU STM32WLEJC-LoRa-E5](Images\MCUSTM32WLEJC-LoRa-E5.jpg)
 
 ## 2. STM32WLE5JC Architecture
 
