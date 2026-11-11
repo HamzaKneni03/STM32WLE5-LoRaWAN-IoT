@@ -27,7 +27,7 @@ The following table summarizes the main technical features of the development bo
 
 **Figure 2: Main Peripherals of the Development Board**
 
-![LoRa-E5 Board Peripherals](../../Images/Hardware/LoRa-E5_Peripherals.jpg)
+![LoRa-E5 Board Peripherals](LoRa-E5_Peripherals.jpg)
 
 ## LoRa-E5 Dev Board Pinout
 
@@ -52,7 +52,7 @@ The pinout diagram uses different colors to identify the functions of the availa
 
 **Figure 3: LoRa-E5 Dev Board Pinout Diagram**
 
-![LoRa-E5 Dev Board Pinout](../../Images/Hardware/LoRa-E5_Pinout.jpg)
+![LoRa-E5 Dev Board Pinout](LoRa-E5_Pinout.jpg)
 
 ---
 
