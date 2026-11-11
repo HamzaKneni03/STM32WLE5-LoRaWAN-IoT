@@ -1,2 +1,3 @@
-# STM32WLE5-LoRaWAN-IoT
-Embedded LoRaWAN IoT monitoring experiments using STM32WLE5 and The Things Network.
+﻿# STM32WLE5 LoRaWAN IoT Project
+
+Technical documentation of a LoRaWAN-based IoT project developed during my internship at YUCCAINFO.

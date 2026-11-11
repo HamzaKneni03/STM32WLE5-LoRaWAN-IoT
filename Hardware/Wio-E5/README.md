@@ -1,59 +1,80 @@
+﻿# Wio-E5 Development Kit
 
-# Wio-E5 Development Kit Documentation
+## 1. Overview
 
-The LoRa-E5 Dev Board is a compact and cost-effective development platform designed for evaluating and prototyping applications based on the LoRa-E5 module, which integrates the STM32WLE5JC microcontroller and Sub-GHz radio transceiver. It is suitable for LoRaWAN, LoRa P2P, and other long-range, low-power IoT applications.
+The Wio-E5 Development Kit is a LoRaWAN development platform based on the STM32WLE5JC microcontroller from STMicroelectronics. It combines an ARM Cortex-M4 core with an integrated LoRa radio transceiver, making it suitable for low-power and long-range IoT applications.
 
-**Figure 1: LoRa-E5 Development Board**
+The board was used during this project to study LoRaWAN communication, configure the device through AT commands and connect it to The Things Network (TTN).
 
-![LoRa-E5 Development Board](LoRa-E5_Development_Board.jpg)
+![Wio-E5 Development Board](Images/LoRa-E5_Development_Board.jpg)
 
-## Main Features
-
-The following table summarizes the main technical features of the development board.
+## 2. Main Features
 
 | Feature | Description |
 |---|---|
-| Main Module | LoRa-E5 STM32WLE5JC (integrated MCU and Sub-GHz radio) |
-| Microcontroller | Arm Cortex-M4, up to 48 MHz |
+| Main MCU | STM32WLE5JC |
+| CPU Core | ARM Cortex-M4 |
+| CPU Frequency | Up to 48 MHz |
 | Flash Memory | 256 KB |
 | SRAM | 64 KB |
-| RF Frequency Band | 868 MHz / 915 MHz, depending on the board version |
-| Wireless Communication | LoRaWAN and LoRa P2P |
-| USB-C Interface | Power supply and serial communication |
-| Connectors | 2.54 mm headers, UART, I2C, SPI, ADC, and GPIO |
-| Power Supply | 5 V through USB-C or external supply, according to board specifications |
-| Operating Modes | AT commands and native STM32 programming |
-| Antenna Connector | SMA connector for an external Sub-GHz antenna |
+| Radio Frequency | 868 MHz / 915 MHz (depending on version) |
+| Wireless Protocols | LoRaWAN and LoRa P2P |
+| Interfaces | UART, I2C, SPI, ADC, GPIO |
+| Programming | AT Commands and STM32 development |
+| Debug Interface | SWD |
+| Antenna Connector | SMA |
+| USB Interface | USB Type-C |
 
-**Figure 2: Main Peripherals of the Development Board**
+## 3. Board Peripherals and Connectors
 
-![LoRa-E5 Board Peripherals](LoRa-E5_Peripherals.jpg)
+The development board provides several interfaces and peripherals that simplify prototyping and communication with external sensors and devices.
 
-## LoRa-E5 Dev Board Pinout
+![Wio-E5 Board Peripherals](Images/LoRa-E5_Peripherals.jpg)
 
-The LoRa-E5 Dev Board integrates the LoRa-E5 STM32WLE5JC module, combining a 32-bit STM32 microcontroller with a Sub-GHz LoRa radio modem.
+The main elements include:
 
-The board provides several interfaces accessible through its side headers:
+- USB Type-C connector for power supply and USB communication.
+- SMA antenna connector for LoRa wireless communication.
+- UART interface for AT command communication.
+- GPIO pins for digital input and output.
+- ADC pins for analog sensor measurements.
+- I2C and SPI interfaces for external peripherals.
+- BOOT and RESET buttons for device configuration and restart.
 
-- **Digital and Analog GPIO:** Used to connect sensors and actuators.
-- **Communication Interfaces:** UART, LPUART, USART, I2C, and SPI.
-- **Debugging Interface:** SWD pads for STM32 programming and debugging.
-- **SMA Connector:** Used to connect an external LoRa antenna.
-- **USB-C Port:** Used for board power supply and serial communication.
-- **BOOT and RESET Controls:** Used to manage the startup process and enter bootloader mode.
+## 4. Pinout Description
 
-The pinout diagram uses different colors to identify the functions of the available pins:
+The pinout diagram identifies the available pins and their main functions. It is useful when connecting external sensors, modules and debugging tools.
 
-- **Power:** Power supply pins.
-- **GND:** Ground pins.
-- **ADC:** Analog input pins.
-- **UART / USART / I2C / SPI:** Communication interfaces.
-- **SWD:** Programming and debugging pins.
+![Wio-E5 Pinout Diagram](Images/LoRa-E5_Pinout.jpg)
 
-**Figure 3: LoRa-E5 Dev Board Pinout Diagram**
+### 4.1 GPIO
 
-![LoRa-E5 Dev Board Pinout](LoRa-E5_Pinout.jpg)
+General Purpose Input/Output pins can be configured as digital inputs or outputs to interface with external electronic components.
 
----
+### 4.2 ADC
 
-**Note:** This documentation describes the features and interfaces available on the development board. It does not imply that every interface was used or tested during the internship.
+Analog-to-Digital Converter pins allow the microcontroller to measure analog signals from sensors.
+
+### 4.3 Communication Interfaces
+
+The board supports several communication interfaces:
+
+- UART / USART: serial communication with external devices and AT command interfaces.
+- I2C: connection to sensors and peripheral modules using two communication lines.
+- SPI: high-speed synchronous communication with compatible peripherals.
+
+### 4.4 Debugging Interface
+
+The SWD interface is used for programming and debugging the STM32 microcontroller with a compatible ST-LINK debugger.
+
+### 4.5 Power and Control
+
+The USB Type-C connector provides the board power supply. The BOOT and RESET buttons are used for boot configuration and restarting the microcontroller.
+
+## 5. Role in the Project
+
+In this project, the Wio-E5 Development Kit was used to explore LoRaWAN communication and understand the operation of the STM32WLE5JC-based platform.
+
+The board was configured using AT commands and tested with a LoRaWAN network infrastructure based on The Things Network (TTN) and a Dragino LPS8N gateway.
+
+Further implementation details and communication tests are documented in the Firmware, LoRaWAN and Gateway sections of this repository.
