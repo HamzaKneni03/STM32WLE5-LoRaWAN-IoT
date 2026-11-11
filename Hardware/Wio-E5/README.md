@@ -5,7 +5,7 @@ The LoRa-E5 Dev Board is a compact and cost-effective development platform desig
 
 **Figure 1: LoRa-E5 Development Board**
 
-![LoRa-E5 Development Board](LoRa-E5_Development_Board.jpg)
+![LoRa-E5 Development Board](Hardware/Wio-E5/README.md/LoRa-E5_Development_Board.jpg)
 
 ## Main Features
 
