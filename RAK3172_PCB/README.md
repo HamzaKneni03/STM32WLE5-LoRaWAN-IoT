@@ -17,7 +17,7 @@ The design is divided into six main functional blocks:
 
 The complete electrical schematic designed using Altium Designer is available below.
 
-[**View the complete RAK3172 schematic (PDF)**](RAK3172_Schematic.pdf.)
+[**View the complete RAK3172 schematic (PDF)**](RAK3172_Schematic.pdf)
 
 ## 3. Functional Block Analysis
 
